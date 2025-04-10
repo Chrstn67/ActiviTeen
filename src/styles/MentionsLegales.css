@@ -1,0 +1,39 @@
+.mentions {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.mentions p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.mentions p:first-of-type {
+  font-weight: bold;
+}
+
+.mentions i {
+  font-style: italic;
+  color: #555;
+}
+
+.mentions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mentions {
+    padding: 1rem;
+  }
+
+  .mentions p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
 function Footer() {
@@ -48,6 +49,11 @@ function Footer() {
                 Proposer une activité
               </a>
             </li>
+            <li>
+              <Link to="/mentions-legales" rel="noopener noreferrer">
+                Mentions légales
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,6 +82,7 @@ function Footer() {
           </button>
         </div>
       </dialog>
+      <img src="Logo.jpg" alt="Logo développeur" className="footer-logo" />
     </footer>
   );
 }
