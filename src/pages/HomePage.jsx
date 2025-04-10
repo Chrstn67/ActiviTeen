@@ -344,7 +344,7 @@ function HomePage() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Vous avez une idée d'activité à partager ?
+            Tu as une idée d'activité à partager ?
           </motion.h2>
 
           <motion.p
