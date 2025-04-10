@@ -102,14 +102,6 @@ function ActivityPage() {
           <div className="activity-type-badge large d-none d-md-block">
             {activity.type}
           </div>
-          <motion.div
-            className="activity-type-badge large d-md-none"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            {activity.type}
-          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

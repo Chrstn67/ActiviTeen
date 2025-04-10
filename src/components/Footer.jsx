@@ -15,7 +15,7 @@ function Footer() {
         <div className="footer-section">
           <h3>ActiviTeen</h3>
           <p>
-            Des idées d'activités pour animer vos séjours avec des adolescents
+            Des idées d'activités pour animer tes séjours avec des adolescents
             de 11 à 17 ans.
           </p>
         </div>
@@ -50,21 +50,6 @@ function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className="footer-section">
-          <h3>Suivez-nous</h3>
-          <div className="social-links">
-            <a href="#" aria-label="Facebook" className="social-icon">
-              <i className="facebook"></i>
-            </a>
-            <a href="#" aria-label="Instagram" className="social-icon">
-              <i className="instagram"></i>
-            </a>
-            <a href="#" aria-label="Twitter" className="social-icon">
-              <i className="twitter"></i>
-            </a>
-          </div>
-        </div>
       </div>
 
       <div className="copyright">
@@ -76,12 +61,12 @@ function Footer() {
           <h2>À propos d'ActiviTeen</h2>
           <p>
             ActiviTeen est une ressource pour les animateurs BAFA travaillant
-            avec des adolescents. Notre objectif est de partager des idées
+            avec des adolescents. L'objectif est de partager des idées
             d'activités originales et adaptées aux 11-17 ans.
           </p>
           <p>
-            Ce site a été créé par des animateurs passionnés souhaitant
-            mutualiser leurs expériences et leurs bonnes pratiques.
+            Ce site a été créé en collaboration par des animateurs passionnés
+            souhaitant mutualiser leurs expériences et leurs bonnes pratiques.
           </p>
           <button
             className="btn-secondary"

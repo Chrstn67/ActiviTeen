@@ -125,7 +125,7 @@ function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Des idées d'activités originales pour animer vos séjours avec des
+            Des idées d'activités originales pour animer tes séjours avec des
             11-17 ans
           </motion.p>
 
@@ -353,8 +353,8 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Contribuez à notre collection et aidez d'autres animateurs à
-            proposer des activités originales !
+            Contribue à notre collection et aide d'autres animateurs à proposer
+            des activités originales !
           </motion.p>
 
           <motion.a

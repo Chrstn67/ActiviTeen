@@ -135,7 +135,8 @@
   background: var(--surface-1);
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
-  display: inline-flex;
+  display: flex;
+  justify-content: space-evenly;
   position: relative;
   z-index: 1;
   border: 1px solid var(--surface-2);
@@ -203,7 +204,7 @@
 }
 
 .main-image {
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   border-radius: var(--border-radius);
   border: 1px solid var(--surface-2);

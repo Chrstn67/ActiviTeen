@@ -428,12 +428,13 @@
 
 /* Modifier le placement des tags pour qu'ils soient sous l'image et non dessus */
 .activity-tags {
-  position: static;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  gap: 0.8rem;
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+  justify-content: center;
 }
 
 .tag {
