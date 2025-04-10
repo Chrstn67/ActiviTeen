@@ -348,6 +348,10 @@
   border-left: 4px solid var(--neon-blue);
 }
 
+.variantes-section {
+  border-left: 4px solid #2b56fa;
+}
+
 .conseils-section {
   border-left: 4px solid var(--neon-green);
 }
@@ -372,6 +376,12 @@
   color: var(--neon-blue);
   background: rgba(5, 217, 232, 0.1);
   text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.variantes-section h3 {
+  color: #2b56fa;
+  background: #343a53;
+  text-shadow: 0 0 5px #2b56fa;
 }
 
 .conseils-section h3 {

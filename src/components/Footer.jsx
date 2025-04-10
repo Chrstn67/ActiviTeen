@@ -44,7 +44,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:contact@animados.fr?subject=Proposition%20d'activité&body=Bonjour,%0A%0AJe%20souhaite%20proposer%20une%20activité%20pour%20le%20site%20ActiviTeen.%0A%0ATitre%20:%20%0AType%20d'activité%20:%20%0ADescription%20:%20%0APréparation%20:%20%0ADéroulement%20:%20%0AConseils%20:%20%0ADurée%20:%20%0AÂge%20:%20%0AMatériel%20nécessaire%20:%20%0A%0AMerci%20!">
+              <a href="mailto:activiteen@outlook.com?subject=Proposition%20d'activité%20pour%20ActiviTeen&body=Bonjour%20l'équipe%20ActiviTeen%2C%0A%0AJe%20vous%20adresse%20cette%20proposition%20d'activité%20dans%20l'idée%20qu'elle%20puisse%20trouver%20sa%20place%20sur%20votre%20plateforme.%0A%0AVoici%20les%20éléments%20à%20renseigner%20:%0A%0A🔹%20Titre%20de%20l'activité%20:%20%0A🔹%20Type%20d'activité%20(artistique%2C%20sportive%2C%20réflexion%2C%20etc.)%20:%20%0A🔹%20Description%20brève%20:%20%0A🔹%20Objectif%20ou%20bénéfices%20:%20%0A🔹%20Préparation%20:%20%0A🔹%20Déroulement%20:%20%0A🔹%20Conseils%20ou%20variantes%20:%20%0A🔹%20Durée%20estimée%20:%20%0A🔹%20Tranche%20d'âge%20concernée%20:%20%0A🔹%20Matériel%20nécessaire%20:%20%0A%0A📸%20Joindre%20quelques%20photos%20est%20un%20gros%20plus%20:%20elles%20permettent%20de%20valoriser%20l'activité%20sur%20le%20site.%0A%0ABien%20à%20vous%2C%0A%5BPrénom%20Nom%5D">
                 Proposer une activité
               </a>
             </li>

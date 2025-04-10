@@ -20,6 +20,7 @@ export const activities = [
     deroulement: `
     <p>Commence par une courte présentation du LandArt et montre quelques exemples. Ensuite, laisse les jeunes explorer l’environnement et collecter des éléments naturels. Seuls ou par petits groupes, ils réalisent une œuvre de leur choix. En fin d'activité, chaque groupe présente sa création et son intention artistique.</p>
   `,
+    variantes: ``,
     conseils: `
     <p>Encourage les participants à ne pas abîmer la nature et à n’utiliser que ce qu’ils trouvent déjà au sol. Privilégie la récupération d’éléments tombés naturellement. Veille également à ce que tout reste sur place à la fin de l'activité, sauf les déchets éventuels à ramasser.</p>
     <p>Précise bien qu'il ne faut <i>jamais arracher</i> des éléments. On préférera couper si un élément est ZE pièce coup de coeur du (des) jeune(s).</p>
