@@ -135,8 +135,7 @@
   background: var(--surface-1);
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
-  display: flex;
-  justify-content: space-evenly;
+  display: inline-flex;
   position: relative;
   z-index: 1;
   border: 1px solid var(--surface-2);
@@ -204,7 +203,7 @@
 }
 
 .main-image {
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   border-radius: var(--border-radius);
   border: 1px solid var(--surface-2);
@@ -349,7 +348,7 @@
 }
 
 .variantes-section {
-  border-left: 4px solid #2b56fa;
+  border-left: 4px solid #ff00ff;
 }
 
 .conseils-section {
@@ -379,9 +378,9 @@
 }
 
 .variantes-section h3 {
-  color: #2b56fa;
-  background: #343a53;
-  text-shadow: 0 0 5px #2b56fa;
+  color: #ff00ff;
+  background: #ff00ff41;
+  text-shadow: 0 0 5px #ff00ff;
 }
 
 .conseils-section h3 {
@@ -836,5 +835,193 @@
   .btn-share {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media print {
+  /* Reset background and colors for better printing */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+  }
+
+  /* Hide elements not needed for print */
+  .breadcrumb,
+  .activity-gallery,
+  .activity-type-badge,
+  .activity-actions,
+  .related-activities,
+  .btn-view,
+  .btn-print,
+  .btn-share,
+  .activity-tags,
+  footer,
+  header {
+    display: none !important;
+  }
+
+  /* Reset container width */
+  .activity-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Clean up activity detail */
+  .activity-detail {
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .activity-detail::before {
+    display: none;
+  }
+
+  /* Header styling */
+  .activity-header {
+    padding: 0 0 1cm;
+    border-bottom: 1pt solid #ccc;
+    margin-bottom: 1cm;
+  }
+
+  .activity-header h1 {
+    font-size: 24pt;
+    color: black;
+    text-shadow: none;
+    margin-bottom: 0.5cm;
+  }
+
+  /* Meta information */
+  .activity-meta {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0.5cm;
+    color: black;
+  }
+
+  /* Content sections */
+  .activity-content {
+    padding: 0;
+    border: none;
+  }
+
+  .activity-description {
+    margin-bottom: 1cm;
+  }
+
+  .main-description {
+    background: none;
+    box-shadow: none;
+    border-left: 2pt solid #999;
+    padding: 0 0 0 0.5cm;
+    margin-bottom: 1cm;
+    color: black;
+  }
+
+  .main-description::before {
+    display: none;
+  }
+
+  /* Section styling */
+  .activity-section {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2pt solid #999;
+    padding: 0 0 0 0.5cm;
+    margin-bottom: 1cm;
+    page-break-inside: avoid;
+  }
+
+  .activity-section:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .activity-section h3 {
+    background: none;
+    text-shadow: none;
+    color: black;
+    padding: 0;
+    margin-bottom: 0.3cm;
+    font-size: 16pt;
+  }
+
+  /* Materials section */
+  .materials-section {
+    page-break-inside: avoid;
+  }
+
+  .materials-section h2 {
+    color: black;
+    text-shadow: none;
+    text-align: left;
+    font-size: 18pt;
+    margin-bottom: 0.5cm;
+  }
+
+  .materials-section h2::after {
+    display: none;
+  }
+
+  .materials-list {
+    display: block;
+  }
+
+  .materials-list li {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2pt solid #999;
+    padding: 0.2cm 0 0.2cm 0.5cm;
+    margin-bottom: 0.2cm;
+    color: black;
+  }
+
+  .materials-list li:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Add page breaks */
+  .activity-section {
+    page-break-inside: avoid;
+  }
+
+  .materials-section {
+    page-break-before: always;
+  }
+
+  /* Add a footer with page numbers */
+  @page {
+    margin: 2cm;
+    @bottom-center {
+      content: "Page " counter(page) " sur " counter(pages);
+    }
+  }
+
+  /* Add a header with activity title */
+  @page {
+    @top-center {
+      content: attr(data-title);
+      font-style: italic;
+    }
+  }
+
+  /* Add source URL at the end */
+  .activity-content::after {
+    content: "Source: " attr(data-url);
+    display: block;
+    margin-top: 1cm;
+    font-style: italic;
+    font-size: 10pt;
+    color: #666;
   }
 }

@@ -164,6 +164,7 @@ img.footer-logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: auto; /* Ajoutez cette ligne pour permettre le défilement si nécessaire */
 }
 
 .modal::backdrop {
@@ -175,6 +176,9 @@ img.footer-logo {
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne le contenu en haut */
 }
 
 .modal-content::before {
@@ -194,13 +198,14 @@ img.footer-logo {
   font-size: 1.8rem;
   text-shadow: 0 0 5px var(--neon-pink);
   text-align: center;
+  width: 100%; /* Assurez-vous que le titre prend toute la largeur */
 }
 
 .modal-content p {
   margin-bottom: 1.5rem;
   line-height: 1.7;
   color: white;
-  text-align: center;
+  text-align: left; /* Aligne le texte à gauche */
 }
 
 .modal-content .btn-secondary {
@@ -208,20 +213,4 @@ img.footer-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .footer-section {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-section h3 {
-    font-size: 1.2rem;
-  }
 }

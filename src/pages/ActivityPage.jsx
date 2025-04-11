@@ -97,6 +97,8 @@ function ActivityPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
+        data-title={activity.title}
+        data-url={window.location.href}
       >
         <header className="activity-header">
           <div className="activity-type-badge large d-none d-md-block">
@@ -177,7 +179,11 @@ function ActivityPage() {
           )}
         </section>
 
-        <section className="activity-content">
+        <section
+          className="activity-content"
+          data-title={activity.title}
+          data-url={window.location.href}
+        >
           <div className="activity-description">
             <motion.p
               className="main-description"

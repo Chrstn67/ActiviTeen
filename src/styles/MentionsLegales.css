@@ -1,39 +1,78 @@
 .mentions {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 2rem auto;
   padding: 2rem;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #ffffff;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--neo-shadow);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--surface-2);
+}
+
+.mentions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-primary);
+  z-index: 1;
+}
+
+.mentions h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.mentions h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--gradient-secondary);
+  border-radius: 2px;
 }
 
 .mentions p {
   margin-bottom: 1.5rem;
+  line-height: 1.8;
   text-align: justify;
 }
 
-.mentions p:first-of-type {
-  font-weight: bold;
-}
-
 .mentions i {
+  color: var(--neon-blue);
   font-style: italic;
-  color: #555;
 }
 
-.mentions h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #007bff;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
+@media print {
   .mentions {
-    padding: 1rem;
+    background: white;
+    color: black;
+    box-shadow: none;
+    border: none;
   }
 
-  .mentions p {
-    font-size: 0.9rem;
+  .mentions::before,
+  .mentions h3::after {
+    display: none;
+  }
+
+  .mentions h3 {
+    color: black;
+    text-shadow: none;
+  }
+
+  .mentions i {
+    color: black;
   }
 }
