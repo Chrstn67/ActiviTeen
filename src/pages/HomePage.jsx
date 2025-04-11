@@ -117,9 +117,9 @@ function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            Anim'Ados
-            <span className="glitch-effect">Anim'Ados</span>
-            <span className="glitch-effect">Anim'Ados</span>
+            ActiviTeen
+            <span className="glitch-effect">ActiviTeen</span>
+            <span className="glitch-effect">ActiviTeen</span>
           </motion.h1>
 
           <motion.p
@@ -361,7 +361,7 @@ function HomePage() {
           </motion.p>
 
           <motion.a
-            href="mailto:contact@animados.fr?subject=Proposition%20d'activité&body=Bonjour,%0A%0AJe%20souhaite%20proposer%20une%20activité%20pour%20le%20site%20Anim'Ados.%0A%0ATitre%20:%20%0AType%20d'activité%20:%20%0ADescription%20:%20%0APréparation%20:%20%0ADéroulement%20:%20%0AConseils%20:%20%0ADurée%20:%20%0AÂge%20:%20%0AMatériel%20nécessaire%20:%20%0A%0AMerci%20!"
+            href="mailto:contact@animados.fr?subject=Proposition%20d'activité&body=Bonjour,%0A%0AJe%20souhaite%20proposer%20une%20activité%20pour%20le%20site%20ActiviTeen.%0A%0ATitre%20:%20%0AType%20d'activité%20:%20%0ADescription%20:%20%0APréparation%20:%20%0ADéroulement%20:%20%0AConseils%20:%20%0ADurée%20:%20%0AÂge%20:%20%0AMatériel%20nécessaire%20:%20%0A%0AMerci%20!"
             className="btn-primary"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
