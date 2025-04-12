@@ -1,6 +1,7 @@
 "use client";
 
 import "../styles/Footer.css";
+import { FaWhatsapp } from "react-icons/fa"; // Importation de l'icône WhatsApp
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -59,6 +60,24 @@ function Footer() {
                 }}
               >
                 Mentions légales
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h3>Réseau</h3>
+          <ul>
+            <li>
+              <a
+                href="https://whatsapp.com/channel/0029Vb6AgTY5a248YKSr103x"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <FaWhatsapp style={{ marginRight: "8px" }} />{" "}
+                {/* Icône WhatsApp */}
+                Chaîne WhatsApp
               </a>
             </li>
           </ul>

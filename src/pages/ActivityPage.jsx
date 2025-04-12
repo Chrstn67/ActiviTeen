@@ -226,7 +226,7 @@ function ActivityPage() {
             >
               <h3>Variantes</h3>
               <div
-                dangerouslySetInnerHTML={{ __html: activity.Variantes }}
+                dangerouslySetInnerHTML={{ __html: activity.variantes }}
               ></div>
             </motion.div>
 

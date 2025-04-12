@@ -351,6 +351,10 @@
   border-left: 4px solid #ff00ff;
 }
 
+.variantes-section div {
+  color: var(--light-text);
+}
+
 .conseils-section {
   border-left: 4px solid var(--neon-green);
 }
