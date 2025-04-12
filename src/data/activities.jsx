@@ -84,7 +84,7 @@ export const activities = [
       <p>Rappelle les règles : interdiction d’utiliser la barre de recherche ou d’ouvrir des pages en parallèle.</p>
       <p>Favorise l’aspect ludique et culturel plus que la compétition pure.</p>
     `,
-    duration: "45 min à 1h30 (adaptable selon nombre de manches)",
+    duration: "45 min à 1h30 (à adapter)",
     ageRange: "11-17 ans",
     materials: [
       "Ordinateurs, tablettes ou téléphones avec accès à Wikipédia",
@@ -252,47 +252,57 @@ Gauvain : <i>"Ouais ou alors, ne devrions-nous pas ajouter quelques autres artif
     ],
   },
 
-  // {
-  //   id: 2,
-  //   tags: ["", "", "", ""],
-  //   title: "aaaa",
-  //   type: "",
-  //   shortDescription: "",
-  //   description: "",
-  //   preparation: `
-  //   <p>Avant l'activité, l'animateur doit :</p>
-  //   <ul>
-  //     <li>Choisir un lieu naturel adapté (forêt, parc, plage...)</li>
-  //     <li>Faire une reconnaissance du site pour repérer les zones intéressantes</li>
-  //     <li>Prévoir des inspirations ou exemples d’œuvres simples</li>
-  //     <li>Préparer un appareil photo ou un téléphone pour immortaliser les créations</li>
-  //   </ul>
-  // `,
-  //   deroulement: `
-  //   <p>Commencez par une courte présentation du LandArt et montrez quelques exemples. Ensuite, laissez les adolescents explorer l’environnement et collecter des éléments naturels. Par petits groupes, ils réalisent une œuvre de leur choix. En fin d'activité, chaque groupe présente sa création et son intention artistique.</p>
-  // `,
-  //   variantes: ``,
-  //   conseils: `
-  //   <p>Encouragez les participants à ne pas abîmer la nature et à n’utiliser que ce qu’ils trouvent déjà au sol. Privilégiez la récupération d’éléments tombés naturellement. Veillez également à ce que tout reste sur place à la fin de l'activité, sauf les déchets éventuels à ramasser.</p>
-  // `,
-  //   duration: "1h30 à 2h",
-  //   ageRange: "10-17 ans",
-  //   materials: [
-  //     "Exemples d’œuvres en LandArt",
-  //     "Appareil photo ou téléphone",
-  //     "Sac ou panier pour ramasser les éléments naturels (optionnel)",
-  //   ],
-  // images: [
-  //   {
-  //     src: "./images/LandArt-Arbre-sur-un-talus.jpg",
-  //     alt: "Œuvre de LandArt faite avec des feuilles et des branches",
-  //   },
-  //   {
-  //     src: "./images/Tipi.jpg",
-  //     alt: "Main formée avec des pierres et des fleurs sur le sol",
-  //   },
-  // ],
-  //},
+  {
+    id: 4,
+    tags: ["jeu de société", "récits", "mystère", "interaction"],
+    title: "The Impostor",
+    type: "Jeu de déduction",
+    shortDescription:
+      "Un jeu où les participants doivent deviner quelle anecdote est fausse parmi celles racontées.",
+    description:
+      "Le jeu 'The Impostor' est un jeu de déduction où chaque participant raconte une anecdote, soit vraie, soit fausse. Les autres doivent deviner laquelle est l'imposture. Ce jeu peut se jouer de différentes manières, en ajoutant des éléments créatifs et des variantes pour enrichir l'expérience.",
+    preparation: `
+      <p>Avant l'activité, l'animateur doit :</p>
+      <ul>
+        <li>Choisir un lieu adapté à l'activité (espace calme et propice à l'écoute, comme une salle ou un coin tranquille en extérieur)</li>
+        <li>Préparer une liste d'exemples d'anecdotes pour aider les participants au démarrage</li>
+        <li>Décider si l’activité se déroule sous forme de groupes ou de jeu individuel</li>
+      </ul>
+    `,
+    deroulement: `
+      <p>Chaque participant (ou un petit groupe selon la variante choisie) raconte une anecdote de leur choix. Les autres doivent deviner si l'anecdote est vraie ou fausse. Un tour se compose de chaque joueur racontant son histoire, puis les autres doivent voter. Le joueur qui a raconté l'histoire révèle ensuite si elle était vraie ou fausse.</p>
+     
+    `,
+    variantes: `
+      <ul>
+        <li><strong>Variante 1 :</strong> <i>"Le grand imposteur"</i> <br/> Une personne désignée à l'avance raconte une histoire inventée, tandis que les autres partagent des anecdotes vraies. À la fin, les autres doivent deviner qui est l'imposteur.</li>
+        <li><strong>Variante 2 :</strong> <i>"Tous les imposteurs"</i> <br/> Chaque personne doit raconter une histoire et, au moment du vote, personne ne sait qui est l'imposteur, créant une ambiance de méfiance générale.</li>
+        <li><strong>Variante 3 :</strong> <i>"L'impôt du faux"</i> <br/> Les anecdotes fausses doivent comporter un détail absurde ou incohérent pour rendre la déduction plus difficile. Les participants doivent repérer ce détail précis.</li>
+        <li><strong>Variante 4 :</strong> <i>"L’imposteur célèbre"</i> <br/> L’un des participants doit incarner un personnage historique ou fictif et raconter une anecdote de ce personnage, tandis que les autres racontent leurs propres anecdotes vraies.</li>
+      </ul>
+    `,
+    conseils: `
+      <p>Encourage les participants à faire preuve d'imagination et à raconter des anecdotes crédibles mais marrantes. L'objectif est de rendre les devinettes difficiles sans trop dévoiler d'indications évidentes. Encourage également l’écoute active et la participation de tous.</p>
+    `,
+    duration: "30 minutes à 1h",
+    ageRange: "11-17 ans",
+    materials: [
+      "Anecdotes préparées ou exemples pour démarrer",
+      "Papiers et stylos pour noter les votes",
+      "Une minuterie (optionnel) pour chronométrer les tours",
+    ],
+    images: [
+      // {
+      //   src: "./images/casting-kaamelott.jpg",
+      //   alt: "Grand jeu Kaamelott avec différentes épreuves",
+      // },
+      // {
+      //   src: "./images/medieval-quest.jpg",
+      //   alt: "Participants en pleine quête médiévale",
+      // },
+    ],
+  },
+
   // {
   //   id: 2,
   //   tags: ["", "", "", ""],
