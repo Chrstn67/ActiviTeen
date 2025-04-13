@@ -47,7 +47,7 @@ export const activities = [
   },
   {
     id: 2,
-    tags: ["zzz", "numérique", "recherche", "réflexion", "stratégie"],
+    tags: ["numérique", "recherche", "réflexion", "stratégie"],
     title: "Wiki'Game",
     type: "Jeu numérique",
     shortDescription:
