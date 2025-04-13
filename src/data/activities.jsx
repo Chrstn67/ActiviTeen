@@ -1,7 +1,7 @@
 export const activities = [
   {
     id: 1,
-    tags: ["extérieur", "nature", "artistique", "créatif"],
+    tags: ["artistique", "créativité", "extérieur", "nature"],
     title: "LandArt",
     type: "Activité créative",
     shortDescription:
@@ -47,7 +47,7 @@ export const activities = [
   },
   {
     id: 2,
-    tags: ["recherche", "stratégie", "réflexion", "numérique"],
+    tags: ["zzz", "numérique", "recherche", "réflexion", "stratégie"],
     title: "Wiki'Game",
     type: "Jeu numérique",
     shortDescription:
@@ -102,7 +102,7 @@ export const activities = [
 
   {
     id: 3,
-    tags: ["médiéval", "équipe", "aventure", "roleplay"],
+    tags: ["aventure", "équipe", "roleplay", "immersion"],
     title: "Kaamelott",
     type: "Grand Jeu",
     shortDescription:
@@ -254,7 +254,7 @@ Gauvain : <i>"Ouais ou alors, ne devrions-nous pas ajouter quelques autres artif
 
   {
     id: 4,
-    tags: ["jeu de société", "récits", "mystère", "interaction"],
+    tags: ["déduction", "immagination", "interaction"],
     title: "The Impostor",
     type: "Jeu de déduction",
     shortDescription:

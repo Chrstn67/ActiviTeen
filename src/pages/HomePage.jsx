@@ -77,11 +77,15 @@ function HomePage() {
     setFilteredActivities(result);
   }, [activeFilter, searchTerm]);
 
-  // Extract unique tags from all activities
-  const allTags = [...new Set(activities.flatMap((activity) => activity.tags))];
+  // Extract unique tags from all activities and sort alphabetically
+  const allTags = [
+    ...new Set(activities.flatMap((activity) => activity.tags)),
+  ].sort();
 
-  // Extract unique types from all activities
-  const allTypes = [...new Set(activities.map((activity) => activity.type))];
+  // Extract unique types from all activities and sort alphabetically
+  const allTypes = [
+    ...new Set(activities.map((activity) => activity.type)),
+  ].sort();
 
   // Function to create a slug from activity title
   const createSlug = (title) => {
@@ -286,7 +290,8 @@ function HomePage() {
                 )}
               </div>
               <div className="activity-tags">
-                {activity.tags.map((tag) => (
+                {/* Sort tags alphabetically */}
+                {[...activity.tags].sort().map((tag) => (
                   <span
                     key={tag}
                     className="tag"
@@ -347,7 +352,7 @@ function HomePage() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Vous avez une idée d'activité à partager ?
+            Tu as une idée d'activité à partager ?
           </motion.h2>
 
           <motion.p
@@ -356,8 +361,8 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Contribuez à notre collection et aidez d'autres animateurs à
-            proposer des activités originales !
+            Contribue à notre collection et aide d'autres animateurs à proposer
+            des activités originales !
           </motion.p>
 
           <motion.a

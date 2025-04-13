@@ -120,7 +120,7 @@ function ActivityPage() {
             </span>
           </div>
           <div className="activity-tags">
-            {activity.tags.map((tag) => (
+            {activity.tags.sort().map((tag) => (
               <Link key={tag} to={`/?tag=${tag}`} className="tag">
                 {tag}
               </Link>
@@ -251,7 +251,7 @@ function ActivityPage() {
           >
             <h2>Matériel nécessaire</h2>
             <ul className="materials-list">
-              {activity.materials.map((material, index) => (
+              {activity.materials.sort().map((material, index) => (
                 <motion.li
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
