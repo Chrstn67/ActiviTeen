@@ -340,7 +340,7 @@ Gauvain : <i>"Ouais ou alors, ne devrions-nous pas ajouter quelques autres artif
       <p>Assure-toi que les règles soient bien comprises avant de lancer le jeu. Rappelle les limites de terrain et les consignes de sécurité (pas de contacts violents, respect du terrain naturel).</p>
       <p>Évite les zones dangereuses (rochers, ronces, trous...) et prévois de l’eau à proximité pour les pauses. Si possible, fais une démonstration rapide avant de commencer.</p>
     `,
-    duration: "45 min à 1h30",
+    duration: "3h",
     ageRange: "10-17 ans",
     materials: [
       "2 drapeaux (tissus colorés, foulards...)",
