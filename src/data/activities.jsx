@@ -303,47 +303,64 @@ Gauvain : <i>"Ouais ou alors, ne devrions-nous pas ajouter quelques autres artif
     ],
   },
 
-  // {
-  //   id: 2,
-  //   tags: ["", "", "", ""],
-  //   title: "aaaa",
-  //   type: "",
-  //   shortDescription: "",
-  //   description: "",
-  //   preparation: `
-  //   <p>Avant l'activité, l'animateur doit :</p>
-  //   <ul>
-  //     <li>Choisir un lieu naturel adapté (forêt, parc, plage...)</li>
-  //     <li>Faire une reconnaissance du site pour repérer les zones intéressantes</li>
-  //     <li>Prévoir des inspirations ou exemples d’œuvres simples</li>
-  //     <li>Préparer un appareil photo ou un téléphone pour immortaliser les créations</li>
-  //   </ul>
-  // `,
-  //   deroulement: `
-  //   <p>Commencez par une courte présentation du LandArt et montrez quelques exemples. Ensuite, laissez les adolescents explorer l’environnement et collecter des éléments naturels. Par petits groupes, ils réalisent une œuvre de leur choix. En fin d'activité, chaque groupe présente sa création et son intention artistique.</p>
-  // `,
-  //   variantes: ``,
-  //   conseils: `
-  //   <p>Encouragez les participants à ne pas abîmer la nature et à n’utiliser que ce qu’ils trouvent déjà au sol. Privilégiez la récupération d’éléments tombés naturellement. Veillez également à ce que tout reste sur place à la fin de l'activité, sauf les déchets éventuels à ramasser.</p>
-  // `,
-  //   duration: "1h30 à 2h",
-  //   ageRange: "10-17 ans",
-  //   materials: [
-  //     "Exemples d’œuvres en LandArt",
-  //     "Appareil photo ou téléphone",
-  //     "Sac ou panier pour ramasser les éléments naturels (optionnel)",
-  //   ],
-  // images: [
-  //   {
-  //     src: "./images/LandArt-Arbre-sur-un-talus.jpg",
-  //     alt: "Œuvre de LandArt faite avec des feuilles et des branches",
-  //   },
-  //   {
-  //     src: "./images/Tipi.jpg",
-  //     alt: "Main formée avec des pierres et des fleurs sur le sol",
-  //   },
-  // ],
-  //},
+  {
+    id: 5,
+    tags: ["extérieur", "stratégie", "équipe", "course"],
+    title: "Jeu du Drapeau",
+    type: "Jeu d'extérieur",
+    shortDescription:
+      "Un jeu de stratégie en équipe où il faut capturer le drapeau adverse sans se faire toucher.",
+    description: `
+      Le Jeu du Drapeau est un grand classique des jeux en plein air. Deux équipes s'affrontent pour capturer le drapeau de l'autre camp, situé dans sa base, tout en protégeant le leur. Il faut ruser, courir, piéger, défendre... Bref, un excellent moyen de se défouler et de travailler en équipe.
+      C'est un jeu dynamique, simple à mettre en place, et adaptable à tout type de terrain naturel (forêt, prairie, parc...).
+    `,
+    preparation: `
+      <p>Avant l'activité, tu dois :</p>
+      <ul>
+        <li>Choisir un terrain suffisamment vaste avec deux zones bien séparées (une pour chaque équipe)</li>
+        <li>Délimiter les bases de chaque équipe et une zone neutre au centre</li>
+        <li>Prévoir deux drapeaux bien visibles (tissu coloré, foulard...)</li>
+        <li>Préparer des bandeaux ou foulards pour distinguer les équipes</li>
+      </ul>
+    `,
+    deroulement: `
+      <p>Divise les joueurs en deux équipes équilibrées. Chaque équipe place son drapeau dans sa base, bien visible mais protégé. Le but est d’aller capturer le drapeau adverse et le ramener dans sa base sans se faire attraper.</p>
+      <p>Si un joueur est touché dans le camp adverse, il est soit éliminé, soit mis en prison (selon la variante). Ses coéquipiers peuvent venir le libérer.</p>
+      <p>La première équipe à capturer le drapeau adverse et à le ramener gagne la manche. On peut faire plusieurs manches en changeant les rôles ou en ajoutant des obstacles.</p>
+    `,
+    variantes: `
+      <ul>
+        <li><strong>Variante Prison :</strong> Les joueurs capturés dans le camp adverse sont envoyés en prison. Un coéquipier peut les libérer en les touchant sans se faire prendre lui-même.</li>
+        <li><strong>Variante Multi-drapeaux :</strong> Chaque équipe doit protéger plusieurs petits drapeaux. Le but est d’en capturer le plus possible.</li>
+        <li><strong>Variante Espion :</strong> Un joueur par équipe change de foulard au début et infiltre l’autre camp sans se faire repérer.</li>
+        <li><strong>Variante de nuit :</strong> Le jeu peut se jouer avec lampes frontales ou bâtons lumineux pour un effet stratégique et ambiance mystérieuse.</li>
+      </ul>
+    `,
+    conseils: `
+      <p>Assure-toi que les règles soient bien comprises avant de lancer le jeu. Rappelle les limites de terrain et les consignes de sécurité (pas de contacts violents, respect du terrain naturel).</p>
+      <p>Évite les zones dangereuses (rochers, ronces, trous...) et prévois de l’eau à proximité pour les pauses. Si possible, fais une démonstration rapide avant de commencer.</p>
+    `,
+    duration: "45 min à 1h30",
+    ageRange: "10-17 ans",
+    materials: [
+      "2 drapeaux (tissus colorés, foulards...)",
+      "Foulards ou bandeaux pour différencier les équipes",
+      "Plots ou cordes pour délimiter les bases",
+      "Chronomètre (optionnel)",
+      "Lampe frontale (pour la version nocturne)",
+    ],
+    images: [
+      {
+        src: "./images/Drapeaux.jpg",
+        alt: "2 drapeaux faits de bois et de chutes de tissus",
+      },
+      // {
+      //   src: "./images/Tipi.jpg",
+      //   alt: "Main formée avec des pierres et des fleurs sur le sol",
+      // },
+    ],
+  },
+
   // {
   //   id: 2,
   //   tags: ["", "", "", ""],
