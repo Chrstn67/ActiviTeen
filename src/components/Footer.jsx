@@ -83,7 +83,14 @@ function Footer() {
           </ul>
         </div>
       </div>
-
+      <section className="Logos">
+        <img
+          src="ActiviTeen-Logo.png"
+          alt="Logo développeur"
+          className="footer-logo"
+        />
+        <img src="Logo.jpg" alt="Logo développeur" className="footer-logo" />
+      </section>
       <div className="copyright">
         <p>&copy; {currentYear} ActiviTeen - Tous droits réservés</p>
       </div>

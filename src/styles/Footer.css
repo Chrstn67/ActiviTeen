@@ -12,7 +12,17 @@ img.footer-logo {
   width: 100px;
   height: auto;
   display: block;
-  margin: 0 auto 1rem; /* Centrer le logo */
+  margin: 0 1rem; /* Espacement entre les logos */
+}
+
+.Logos {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement les logos */
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer::before {
@@ -64,7 +74,7 @@ img.footer-logo {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centrer les sections */
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -76,7 +86,7 @@ img.footer-logo {
   flex: 1;
   min-width: 250px;
   margin-bottom: 2.5rem;
-  text-align: center; /* Centrer le texte dans chaque section */
+  text-align: center;
 }
 
 .footer-section h3 {
@@ -95,7 +105,7 @@ img.footer-logo {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%); /* Centrer la ligne sous le titre */
+  transform: translateX(-50%);
   width: 50px;
   height: 2px;
   background: var(--neon-pink);
@@ -109,7 +119,7 @@ img.footer-logo {
 
 .footer-section li {
   margin-bottom: 1rem;
-  text-align: center; /* Centrer les éléments de la liste */
+  text-align: center;
 }
 
 .footer-section a {
@@ -117,9 +127,9 @@ img.footer-logo {
   text-decoration: none;
   transition: var(--transition-normal);
   font-size: 1rem;
-  display: inline-flex; /* Utiliser flex pour centrer les icônes et le texte */
+  display: inline-flex;
   align-items: center;
-  justify-content: center; /* Centrer le contenu horizontalement */
+  justify-content: center;
   position: relative;
   padding-left: 0;
 }
@@ -162,60 +172,33 @@ img.footer-logo {
   border: 1px solid var(--surface-2);
   border-radius: var(--border-radius);
   box-shadow: var(--neo-shadow), 0 0 20px var(--neon-pink);
-  padding: 0;
-  max-width: 500px;
-  width: 90%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: auto; /* Ajoutez cette ligne pour permettre le défilement si nécessaire */
-}
-
-.modal::backdrop {
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  z-index: 2;
 }
 
 .modal-content {
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Aligne le contenu en haut */
+  text-align: left;
+  color: var(--text-color);
 }
 
-.modal-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--gradient-primary);
-  z-index: 1;
-}
-
-.modal-content h2 {
-  margin-bottom: 1.5rem;
+.modal h2 {
   color: var(--neon-pink);
-  font-size: 1.8rem;
-  text-shadow: 0 0 5px var(--neon-pink);
-  text-align: center;
-  width: 100%; /* Assurez-vous que le titre prend toute la largeur */
+  margin-bottom: 1rem;
 }
 
-.modal-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  color: white;
-  text-align: left; /* Aligne le texte à gauche */
+.modal .btn-secondary {
+  margin-top: 2rem;
+  background: var(--neon-blue);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.modal-content .btn-secondary {
-  margin-top: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.modal .btn-secondary:hover {
+  background: var(--neon-pink);
 }
