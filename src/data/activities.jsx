@@ -361,47 +361,59 @@ Gauvain : <i>"Ouais ou alors, ne devrions-nous pas ajouter quelques autres artif
     ],
   },
 
-  // {
-  //   id: 2,
-  //   tags: ["", "", "", ""],
-  //   title: "aaaa",
-  //   type: "",
-  //   shortDescription: "",
-  //   description: "",
-  //   preparation: `
-  //   <p>Avant l'activité, l'animateur doit :</p>
-  //   <ul>
-  //     <li>Choisir un lieu naturel adapté (forêt, parc, plage...)</li>
-  //     <li>Faire une reconnaissance du site pour repérer les zones intéressantes</li>
-  //     <li>Prévoir des inspirations ou exemples d’œuvres simples</li>
-  //     <li>Préparer un appareil photo ou un téléphone pour immortaliser les créations</li>
-  //   </ul>
-  // `,
-  //   deroulement: `
-  //   <p>Commencez par une courte présentation du LandArt et montrez quelques exemples. Ensuite, laissez les adolescents explorer l’environnement et collecter des éléments naturels. Par petits groupes, ils réalisent une œuvre de leur choix. En fin d'activité, chaque groupe présente sa création et son intention artistique.</p>
-  // `,
-  //   variantes: ``,
-  //   conseils: `
-  //   <p>Encouragez les participants à ne pas abîmer la nature et à n’utiliser que ce qu’ils trouvent déjà au sol. Privilégiez la récupération d’éléments tombés naturellement. Veillez également à ce que tout reste sur place à la fin de l'activité, sauf les déchets éventuels à ramasser.</p>
-  // `,
-  //   duration: "1h30 à 2h",
-  //   ageRange: "10-17 ans",
-  //   materials: [
-  //     "Exemples d’œuvres en LandArt",
-  //     "Appareil photo ou téléphone",
-  //     "Sac ou panier pour ramasser les éléments naturels (optionnel)",
-  //   ],
-  // images: [
-  //   {
-  //     src: "./images/LandArt-Arbre-sur-un-talus.jpg",
-  //     alt: "Œuvre de LandArt faite avec des feuilles et des branches",
-  //   },
-  //   {
-  //     src: "./images/Tipi.jpg",
-  //     alt: "Main formée avec des pierres et des fleurs sur le sol",
-  //   },
-  // ],
-  //},
+  {
+    id: 6,
+    tags: ["musique", "jeu d'équipe", "connaissance", "blind test"],
+    title: "BlindTest Master",
+    type: "Jeu musical",
+    shortDescription:
+      "Un quiz musical où les équipes s'affrontent pour reconnaître des extraits sonores le plus rapidement possible.",
+    description:
+      "BlindTest Master est un jeu dynamique et compétitif où les participants testent leur culture musicale à travers des extraits audio à deviner. Parfait pour les amateurs de musique de tous horizons.",
+    preparation: `
+      <p>Avant l'activité, l'animateur doit :</p>
+      <ul>
+        <li>Préparer une playlist variée d'extraits musicaux (30 secondes max par extrait)</li>
+        <li>Classer les extraits par catégories ou décennies pour varier les plaisirs</li>
+        <li>Prévoir un système de sonorisation adapté (enceinte, ordinateur, téléphone...)</li>
+        <li>Créer une feuille de scores ou utiliser une application pour noter les points</li>
+      </ul>
+    `,
+    deroulement: `
+      <p>Divisez les participants en équipes. Chaque extrait musical est diffusé, et la première équipe à buzzer (ou lever la main) peut donner sa réponse. Si elle se trompe, une autre équipe peut tenter sa chance. Des points peuvent être attribués pour le titre, l'artiste ou l'année. En fin de partie, l'équipe ayant le plus de points remporte la victoire.</p>
+    `,
+    variantes: `
+      <ul>
+        <li>Thématique : ne diffuser que des musiques d’un style (rock, dessins animés, musiques de films, etc.)</li>
+        <li>BlindTest inversé : les équipes chantent ou fredonnent un morceau pendant que les autres devinent</li>
+        <li>BlindTest gestuel : mimer le clip ou l’artiste sans musique</li>
+      </ul>
+    `,
+    conseils: `
+      <p>Assurez-vous que la qualité sonore est suffisante pour une écoute correcte. Pensez à inclure des morceaux faciles et d'autres plus difficiles pour équilibrer le niveau. Veillez à ce que tout le monde participe, en alternant les représentants des équipes si nécessaire.</p>
+
+       <p>Ici sont proposés des idées de base. Mais vous pouvez aussi utiliser le site <a>https://chrstn67.github.io/BlindTestMaster/</a> où 3 variantes existent, avec des règles différentes. <em>ATTENTION : </em>Les chansons sont vraiment variées et les plus jeunes risquent de s'ennuyer...</p>
+    `,
+    duration: "45 min à 1h30",
+    ageRange: "11-17 ans",
+    materials: [
+      "Enceinte ou système de son",
+      "Ordinateur ou téléphone avec une playlist prête",
+      "Feuille de score ou tableau",
+      "Buzzer ou objets pour signaler une réponse (cloche, main levée, etc.)",
+    ],
+    images: [
+      {
+        src: "./images/Blind-test-1.png",
+        alt: "Page du site BlindTestMaster avec panneau de commandes et scores",
+      },
+      {
+        src: "./images/Blind-test-2.png",
+        alt: "Modale donnant la réponse à 'à 'une chanson du BlindTest",
+      },
+    ],
+  },
+
   // {
   //   id: 2,
   //   tags: ["", "", "", ""],
